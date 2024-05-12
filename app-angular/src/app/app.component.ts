@@ -22,6 +22,7 @@ export class AppComponent {
 
   constructor(){
     this.hubConnection = new HubConnectionBuilder()
+      //localhost está no launchSettings 
     .withUrl("http://localhost:7150/chat")
     .build()
 
